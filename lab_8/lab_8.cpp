@@ -35,7 +35,7 @@ public:
 			throw std::out_of_range("pop");
 		}
 	}
-	type top() {
+	type& top() {
 		if (m_elements != 0) {
 			return m_data[m_elements-1];
 		}
